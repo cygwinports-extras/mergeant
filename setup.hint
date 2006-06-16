@@ -1,0 +1,9 @@
+category: Gnome Database
+requires: cygwin libgda2 libgnomedb2 libgnomeui2 openssl
+sdesc: "GNOME Database administration program"
+ldesc: "Mergeant is a program which helps administer a DBMS database using 
+the gnome-db framework (see www.gnome-db.org for more information
+about gnome-db). Basically, it memorizes all the structure of the
+database, and some queries, and does the SQL queries instead of the user
+(not having to type all over again those SQL commands, although it is
+still possible to do so)."
