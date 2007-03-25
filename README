@@ -1,99 +1,36 @@
 mergeant
 ------------------------------------------
-Mergeant is a program which helps administer a DBMS database using the
-gnome-db framework (see http://www.gnome-db.org/ for more information
-about gnome-db). Basically, it memorizes all the structure of the
-database, and some queries, and does the SQL queries instead of the user
-(not having to type all over again those SQL commands, although it is
+Mergeant is a program which helps administer a DBMS database using the 
+gnome-db framework. Basically, it memorizes all the structure of the 
+database, and some queries, and does the SQL queries instead of the user 
+(not having to type all over again those SQL commands, although it is 
 still possible to do so).
 
 Runtime requirements:
-  cygwin-1.5.18-1
-  GConf2-2.8.1-1
-  ORBit2-2.12.3-1
-  atk-runtime-1.9.1-1
-  expat-1.95.8-1
-  glib2-runtime-2.6.5-1
-  gnome-keyring-0.4.3-1
-  gnome-vfs2-2.8.4-1
-  gtk2-x11-runtime-2.6.8-1
-  gtksourceview-1.2.1-1
-  libXft2-2.1.6-1
-  libart_lgpl2-2.3.16-1
-  libaudiofile0-0.2.6-2
-  libbonobo20-2.8.0-1
-  libbonoboui2-2.8.0-1
-  libesound0-0.2.36-1
-  libfontconfig1-2.2.2-1
-  libfreetype26-2.1.9-1
-  libgda2-1.2.2-1
-  libglade2-2.5.1-1
-  libgnome2-2.8.0-1
-  libgnomecanvas2-2.10.2-1
-  libgnomedb2-1.2.2-1
-  libgnomeprint22-2.10.3-1
-  libgnomeui2-2.8.1-1
-  libiconv2-1.9.2-1
-  libintl3-0.14.1-1
-  libjpeg62-6b-11
-  libpopt0-1.6.4-4
-  libxml2-2.6.20-3
-  libxslt-1.1.14-2
-  minires-1.00-1
-  openssl-0.9.8-2
-  pango-runtime-1.8.1-1
-  xorg-x11-bin-dlls-6.8.2.0-1
-  zlib-1.2.3-1
+  cygwin-1.5.24-2
+  gdk-pixbuf2-2.10.9-1
+  glib2-2.12.9-1
+  gtk2-x11-2.10.9-1
+  libgda30-2.99.6-1
+  libgnomecanvas2-2.14.0-1
+  libgnomedb30-2.99.6-1
+  libgnomeui2-2.16.1-1
+  libintl8-0.15-1
 
 Build requirements:
-  cygwin-1.5.18-1
-  autoconf2.5-2.59-3
-  automake1.9-1.9.6-1
-  binutils-20050610-1
-  gawk-3.1.5-1
-  gcc-core-3.4.4-1
-  gtk-doc-1.3-1
-  intltool-0.33-1
-  libtool1.5-1.5.20-1
-  make-3.80-1
+(besides corresponding devel packages)
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  intltool-0.35.4-1
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  pkg-config-0.21-1
   scrollkeeper-0.3.14-2
-  sed-4.1.4-1
-
-  GConf2-2.8.1-1
-  ORBit2-devel-2.12.3-1
-  atk-devel-1.9.1-1
-  expat-1.95.8-1
-  gettext-0.14.1-1
-  glib2-devel-2.6.5-1
-  gnome-keyring-0.4.3-1
-  gnome-vfs2-2.8.4-1
-  gtk2-x11-devel-2.6.8-1
-  gtksourceview-1.2.1-1
-  jpeg-6b-11
-  libXft-devel-2.1.6-1
-  libart_lgpl2-2.3.16-1
-  libaudiofile-devel-0.2.6-2
-  libbonobo2-devel-2.8.0-1
-  libbonoboui2-2.8.0-1
-  libesound-devel-0.2.36-1
-  libfontconfig-devel-2.2.2-1
-  libfreetype2-devel-2.1.9-1
-  libgda2-devel-1.2.2-1
-  libglade2-2.5.1-1
-  libgnome2-2.8.0-1
-  libgnomecanvas2-2.10.2-1
-  libgnomedb2-1.2.2-1
-  libgnomeprint22-2.10.3-1
-  libgnomeui2-2.8.1-1
-  libiconv-1.9.2-1
-  libxml2-devel-2.6.20-3
-  libxslt-1.1.14-2
-  minires-devel-1.00-1
-  openssl-devel-0.9.8-2
-  pango-devel-1.8.1-1
-  popt-1.6.4-4
-  xorg-x11-devel-6.8.2.0-1
-  zlib-1.2.3-1
+  sed-4.1.5-2
 
 Canonical website:
   http://www.gnome-db.org/
@@ -104,266 +41,71 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack mergeant-0.52-1-src.tar.bz2
+  unpack mergeant-0.66-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  ./mergeant-0.52-1.sh all
+  cygport ./mergeant-0.66-X.cygport all
 
 This will create:
-  /usr/src/mergeant-0.52-1-src.tar.bz2
-  /usr/src/mergeant-0.52-1.tar.bz2
+  /usr/src/mergeant-0.66-X-src.tar.bz2
+  /usr/src/mergeant-0.66-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /etc/postinstall/mergeant.sh
-  /usr/bin/cygmergeant-2-1.dll
+  /etc/preremove/mergeant.sh
   /usr/bin/mergeant.exe
-  /usr/bin/mg-db-browser.exe
-  /usr/bin/mg-test-dyn.exe
-  /usr/bin/mg-test-graph.exe
-  /usr/bin/mg-test-grapher.exe
-  /usr/bin/mg-test-handlers.exe
-  /usr/bin/mg-test-selector.exe
-  /usr/bin/mg-test-sqlquery.exe
-  /usr/bin/mg-test1.exe
-  /usr/bin/mg-test2.exe
-  /usr/bin/mg-test3.exe
-  /usr/bin/mg-verify-file.exe
-  /usr/include/libmergeant/graph/mg-canvas-cursor.h
-  /usr/include/libmergeant/graph/mg-canvas-db-relations.h
-  /usr/include/libmergeant/graph/mg-canvas-entity.h
-  /usr/include/libmergeant/graph/mg-canvas-field.h
-  /usr/include/libmergeant/graph/mg-canvas-fkconstraint.h
-  /usr/include/libmergeant/graph/mg-canvas-item.h
-  /usr/include/libmergeant/graph/mg-canvas-text.h
-  /usr/include/libmergeant/graph/mg-canvas-tip.h
-  /usr/include/libmergeant/graph/mg-canvas.h
-  /usr/include/libmergeant/graph/mg-graph-item.h
-  /usr/include/libmergeant/graph/mg-graph.h
-  /usr/include/libmergeant/handlers/mg-data-cell-renderer-boolean.h
-  /usr/include/libmergeant/handlers/mg-data-cell-renderer-combo.h
-  /usr/include/libmergeant/handlers/mg-data-cell-renderer-info.h
-  /usr/include/libmergeant/handlers/mg-data-cell-renderer-textual.h
-  /usr/include/libmergeant/handlers/mg-entry-boolean.h
-  /usr/include/libmergeant/handlers/mg-entry-combo.h
-  /usr/include/libmergeant/handlers/mg-entry-none.h
-  /usr/include/libmergeant/handlers/mg-entry-shell.h
-  /usr/include/libmergeant/handlers/mg-entry-string.h
-  /usr/include/libmergeant/handlers/mg-entry-time.h
-  /usr/include/libmergeant/handlers/mg-entry-wrapper.h
-  /usr/include/libmergeant/handlers/mg-handler-boolean.h
-  /usr/include/libmergeant/handlers/mg-handler-none.h
-  /usr/include/libmergeant/handlers/mg-handler-numerical.h
-  /usr/include/libmergeant/handlers/mg-handler-string.h
-  /usr/include/libmergeant/handlers/mg-handler-time.h
-  /usr/include/libmergeant/libmergeant.h
-  /usr/include/libmergeant/marshal.h
-  /usr/include/libmergeant/mg-base.h
-  /usr/include/libmergeant/mg-condition.h
-  /usr/include/libmergeant/mg-conf.h
-  /usr/include/libmergeant/mg-context.h
-  /usr/include/libmergeant/mg-custom-layout.h
-  /usr/include/libmergeant/mg-data-entry.h
-  /usr/include/libmergeant/mg-data-handler.h
-  /usr/include/libmergeant/mg-database.h
-  /usr/include/libmergeant/mg-db-constraint.h
-  /usr/include/libmergeant/mg-db-field.h
-  /usr/include/libmergeant/mg-db-table.h
-  /usr/include/libmergeant/mg-dbms-update-viewer.h
-  /usr/include/libmergeant/mg-defs.h
-  /usr/include/libmergeant/mg-entity.h
-  /usr/include/libmergeant/mg-enums.h
-  /usr/include/libmergeant/mg-field.h
-  /usr/include/libmergeant/mg-form.h
-  /usr/include/libmergeant/mg-graphviz.h
-  /usr/include/libmergeant/mg-join.h
-  /usr/include/libmergeant/mg-parameter.h
-  /usr/include/libmergeant/mg-qf-all.h
-  /usr/include/libmergeant/mg-qf-field.h
-  /usr/include/libmergeant/mg-qf-func.h
-  /usr/include/libmergeant/mg-qf-value.h
-  /usr/include/libmergeant/mg-qfield.h
-  /usr/include/libmergeant/mg-query.h
-  /usr/include/libmergeant/mg-ref-base.h
-  /usr/include/libmergeant/mg-referer.h
-  /usr/include/libmergeant/mg-renderer.h
-  /usr/include/libmergeant/mg-result-set.h
-  /usr/include/libmergeant/mg-selector-private.h
-  /usr/include/libmergeant/mg-selector.h
-  /usr/include/libmergeant/mg-server-aggregate.h
-  /usr/include/libmergeant/mg-server-data-type.h
-  /usr/include/libmergeant/mg-server-function.h
-  /usr/include/libmergeant/mg-server.h
-  /usr/include/libmergeant/mg-target.h
-  /usr/include/libmergeant/mg-util.h
-  /usr/include/libmergeant/mg-work-core.h
-  /usr/include/libmergeant/mg-work-form.h
-  /usr/include/libmergeant/mg-work-grid.h
-  /usr/include/libmergeant/mg-work-layout.h
-  /usr/include/libmergeant/mg-work-matrix.h
-  /usr/include/libmergeant/mg-work-widget.h
-  /usr/include/libmergeant/mg-xml-storage.h
-  /usr/include/libmergeant/missing.h
-  /usr/include/libmergeant/sel-aggregates.h
-  /usr/include/libmergeant/sel-data-types.h
-  /usr/include/libmergeant/sel-forms.h
-  /usr/include/libmergeant/sel-functions.h
-  /usr/include/libmergeant/sel-graphs.h
-  /usr/include/libmergeant/sel-onequery.h
-  /usr/include/libmergeant/sel-onetable.h
-  /usr/include/libmergeant/sel-onetarget.h
-  /usr/include/libmergeant/sel-queries.h
-  /usr/include/libmergeant/sel-tables.h
-  /usr/include/libmergeant/utility.h
   /usr/lib/bonobo/servers/GNOME_Mergeant.server
-  /usr/lib/libmergeant/plugins/cygmergeant_handler_cidr.dll
-  /usr/lib/libmergeant/plugins/cygmergeant_handler_passmd5.dll
-  /usr/lib/libmergeant/plugins/cygmergeant_handler_text.dll
-  /usr/lib/libmergeant/plugins/libmergeant_handler_cidr.dll.a
-  /usr/lib/libmergeant/plugins/libmergeant_handler_cidr.la
-  /usr/lib/libmergeant/plugins/libmergeant_handler_passmd5.dll.a
-  /usr/lib/libmergeant/plugins/libmergeant_handler_passmd5.la
-  /usr/lib/libmergeant/plugins/libmergeant_handler_text.dll.a
-  /usr/lib/libmergeant/plugins/libmergeant_handler_text.la
-  /usr/lib/libmergeant-2.dll.a
-  /usr/lib/libmergeant-2.la
-  /usr/lib/pkgconfig/libmergeant.pc
-  /usr/share/gtk-doc/html/libmergeant/ch01.html
-  /usr/share/gtk-doc/html/libmergeant/ch02.html
-  /usr/share/gtk-doc/html/libmergeant/ch03.html
-  /usr/share/gtk-doc/html/libmergeant/ch04.html
-  /usr/share/gtk-doc/html/libmergeant/ch04s02.html
-  /usr/share/gtk-doc/html/libmergeant/ch05.html
-  /usr/share/gtk-doc/html/libmergeant/ch06.html
-  /usr/share/gtk-doc/html/libmergeant/ch07.html
-  /usr/share/gtk-doc/html/libmergeant/ch08.html
-  /usr/share/gtk-doc/html/libmergeant/ch08s02.html
-  /usr/share/gtk-doc/html/libmergeant/ch09.html
-  /usr/share/gtk-doc/html/libmergeant/ch09s02.html
-  /usr/share/gtk-doc/html/libmergeant/ch09s03.html
-  /usr/share/gtk-doc/html/libmergeant/ch10.html
-  /usr/share/gtk-doc/html/libmergeant/ch11.html
-  /usr/share/gtk-doc/html/libmergeant/ch12.html
-  /usr/share/gtk-doc/html/libmergeant/example_bad.png
-  /usr/share/gtk-doc/html/libmergeant/example_result.png
-  /usr/share/gtk-doc/html/libmergeant/home.png
-  /usr/share/gtk-doc/html/libmergeant/index.html
-  /usr/share/gtk-doc/html/libmergeant/index.sgml
-  /usr/share/gtk-doc/html/libmergeant/left.png
-  /usr/share/gtk-doc/html/libmergeant/libmergeant-MgCustomLayout.html
-  /usr/share/gtk-doc/html/libmergeant/libmergeant-MgWorkLayout.html
-  /usr/share/gtk-doc/html/libmergeant/libmergeant.devhelp
-  /usr/share/gtk-doc/html/libmergeant/MgBase.html
-  /usr/share/gtk-doc/html/libmergeant/MgCanvas.html
-  /usr/share/gtk-doc/html/libmergeant/MgCanvasCursor.html
-  /usr/share/gtk-doc/html/libmergeant/MgCanvasDbRelations.html
-  /usr/share/gtk-doc/html/libmergeant/MgCanvasEntity.html
-  /usr/share/gtk-doc/html/libmergeant/MgCanvasField.html
-  /usr/share/gtk-doc/html/libmergeant/MgCanvasItem.html
-  /usr/share/gtk-doc/html/libmergeant/MgCanvasText.html
-  /usr/share/gtk-doc/html/libmergeant/MgCanvasTip.html
-  /usr/share/gtk-doc/html/libmergeant/MgCondition.html
-  /usr/share/gtk-doc/html/libmergeant/MgConf.html
-  /usr/share/gtk-doc/html/libmergeant/MgContext.html
-  /usr/share/gtk-doc/html/libmergeant/MgDatabase.html
-  /usr/share/gtk-doc/html/libmergeant/MgDataCellRendererBoolean.html
-  /usr/share/gtk-doc/html/libmergeant/MgDataCellRendererInfo.html
-  /usr/share/gtk-doc/html/libmergeant/MgDataCellRendererTextual.html
-  /usr/share/gtk-doc/html/libmergeant/MgDataEntry.html
-  /usr/share/gtk-doc/html/libmergeant/MgDataHandler.html
-  /usr/share/gtk-doc/html/libmergeant/MgDbConstraint.html
-  /usr/share/gtk-doc/html/libmergeant/MgDbField.html
-  /usr/share/gtk-doc/html/libmergeant/MgDbmsUpdateViewer.html
-  /usr/share/gtk-doc/html/libmergeant/MgDbTable.html
-  /usr/share/gtk-doc/html/libmergeant/MgEntity.html
-  /usr/share/gtk-doc/html/libmergeant/MgEntryBoolean.html
-  /usr/share/gtk-doc/html/libmergeant/MgEntryCidr.html
-  /usr/share/gtk-doc/html/libmergeant/MgEntryCombo.html
-  /usr/share/gtk-doc/html/libmergeant/MgEntryNone.html
-  /usr/share/gtk-doc/html/libmergeant/MgEntryPassmd5.html
-  /usr/share/gtk-doc/html/libmergeant/MgEntryShell.html
-  /usr/share/gtk-doc/html/libmergeant/MgEntryString.html
-  /usr/share/gtk-doc/html/libmergeant/MgEntryTime.html
-  /usr/share/gtk-doc/html/libmergeant/MgEntryWrapper.html
-  /usr/share/gtk-doc/html/libmergeant/MgField.html
-  /usr/share/gtk-doc/html/libmergeant/MgForm.html
-  /usr/share/gtk-doc/html/libmergeant/MgGraph.html
-  /usr/share/gtk-doc/html/libmergeant/MgGraphItem.html
-  /usr/share/gtk-doc/html/libmergeant/MgGraphviz.html
-  /usr/share/gtk-doc/html/libmergeant/MgHandlerBoolean.html
-  /usr/share/gtk-doc/html/libmergeant/MgHandlerCidr.html
-  /usr/share/gtk-doc/html/libmergeant/MgHandlerNone.html
-  /usr/share/gtk-doc/html/libmergeant/MgHandlerNumerical.html
-  /usr/share/gtk-doc/html/libmergeant/MgHandlerPassmd5.html
-  /usr/share/gtk-doc/html/libmergeant/MgHandlerString.html
-  /usr/share/gtk-doc/html/libmergeant/MgHandlerText.html
-  /usr/share/gtk-doc/html/libmergeant/MgHandlerTime.html
-  /usr/share/gtk-doc/html/libmergeant/MgJoin.html
-  /usr/share/gtk-doc/html/libmergeant/MgParameter.html
-  /usr/share/gtk-doc/html/libmergeant/MgQfAll.html
-  /usr/share/gtk-doc/html/libmergeant/MgQfField.html
-  /usr/share/gtk-doc/html/libmergeant/MgQfFunc.html
-  /usr/share/gtk-doc/html/libmergeant/MgQfield.html
-  /usr/share/gtk-doc/html/libmergeant/MgQfValue.html
-  /usr/share/gtk-doc/html/libmergeant/MgQuery.html
-  /usr/share/gtk-doc/html/libmergeant/MgRefBase.html
-  /usr/share/gtk-doc/html/libmergeant/MgReferer.html
-  /usr/share/gtk-doc/html/libmergeant/MgRenderer.html
-  /usr/share/gtk-doc/html/libmergeant/MgResultSet.html
-  /usr/share/gtk-doc/html/libmergeant/MgSelector.html
-  /usr/share/gtk-doc/html/libmergeant/MgServer.html
-  /usr/share/gtk-doc/html/libmergeant/MgServerAggregate.html
-  /usr/share/gtk-doc/html/libmergeant/MgServerDataType.html
-  /usr/share/gtk-doc/html/libmergeant/MgServerFunction.html
-  /usr/share/gtk-doc/html/libmergeant/MgTarget.html
-  /usr/share/gtk-doc/html/libmergeant/MgWorkCore.html
-  /usr/share/gtk-doc/html/libmergeant/MgWorkForm.html
-  /usr/share/gtk-doc/html/libmergeant/MgWorkGrid.html
-  /usr/share/gtk-doc/html/libmergeant/MgWorkMatrix.html
-  /usr/share/gtk-doc/html/libmergeant/MgWorkWidget.html
-  /usr/share/gtk-doc/html/libmergeant/MgXmlStorage.html
-  /usr/share/gtk-doc/html/libmergeant/query01.png
-  /usr/share/gtk-doc/html/libmergeant/right.png
-  /usr/share/gtk-doc/html/libmergeant/style.css
-  /usr/share/gtk-doc/html/libmergeant/up.png
   /usr/share/application-registry/mergeant.applications
   /usr/share/applications/mergeant.desktop
-  /usr/share/doc/Cygwin/mergeant-0.52.README
-  /usr/share/doc/mergeant-0.52/AUTHORS
-  /usr/share/doc/mergeant-0.52/BUGS
-  /usr/share/doc/mergeant-0.52/ChangeLog
-  /usr/share/doc/mergeant-0.52/COPYING
-  /usr/share/doc/mergeant-0.52/INSTALL
-  /usr/share/doc/mergeant-0.52/NEWS
-  /usr/share/doc/mergeant-0.52/README
-  /usr/share/doc/mergeant-0.52/TODO
+  /usr/share/doc/Cygwin/mergeant-0.66.README
+  /usr/share/doc/mergeant-0.66/AUTHORS
+  /usr/share/doc/mergeant-0.66/BUGS
+  /usr/share/doc/mergeant-0.66/COPYING
+  /usr/share/doc/mergeant-0.66/ChangeLog
+  /usr/share/doc/mergeant-0.66/INSTALL
+  /usr/share/doc/mergeant-0.66/MAINTAINERS
+  /usr/share/doc/mergeant-0.66/NEWS
+  /usr/share/doc/mergeant-0.66/README
+  /usr/share/doc/mergeant-0.66/TODO
   /usr/share/gnome/help/mergeant/C/topic.dat
   /usr/share/locale/am/LC_MESSAGES/mergeant.mo
+  /usr/share/locale/ar/LC_MESSAGES/mergeant.mo
   /usr/share/locale/az/LC_MESSAGES/mergeant.mo
   /usr/share/locale/ca/LC_MESSAGES/mergeant.mo
   /usr/share/locale/cs/LC_MESSAGES/mergeant.mo
   /usr/share/locale/da/LC_MESSAGES/mergeant.mo
   /usr/share/locale/de/LC_MESSAGES/mergeant.mo
+  /usr/share/locale/dz/LC_MESSAGES/mergeant.mo
   /usr/share/locale/el/LC_MESSAGES/mergeant.mo
   /usr/share/locale/en_CA/LC_MESSAGES/mergeant.mo
   /usr/share/locale/en_GB/LC_MESSAGES/mergeant.mo
   /usr/share/locale/es/LC_MESSAGES/mergeant.mo
+  /usr/share/locale/eu/LC_MESSAGES/mergeant.mo
   /usr/share/locale/fa/LC_MESSAGES/mergeant.mo
+  /usr/share/locale/fi/LC_MESSAGES/mergeant.mo
   /usr/share/locale/fr/LC_MESSAGES/mergeant.mo
+  /usr/share/locale/gl/LC_MESSAGES/mergeant.mo
   /usr/share/locale/hr/LC_MESSAGES/mergeant.mo
   /usr/share/locale/it/LC_MESSAGES/mergeant.mo
+  /usr/share/locale/ja/LC_MESSAGES/mergeant.mo
+  /usr/share/locale/lt/LC_MESSAGES/mergeant.mo
   /usr/share/locale/ml/LC_MESSAGES/mergeant.mo
   /usr/share/locale/ms/LC_MESSAGES/mergeant.mo
+  /usr/share/locale/nb/LC_MESSAGES/mergeant.mo
+  /usr/share/locale/ne/LC_MESSAGES/mergeant.mo
   /usr/share/locale/nl/LC_MESSAGES/mergeant.mo
-  /usr/share/locale/no/LC_MESSAGES/mergeant.mo
   /usr/share/locale/pl/LC_MESSAGES/mergeant.mo
   /usr/share/locale/pt/LC_MESSAGES/mergeant.mo
   /usr/share/locale/pt_BR/LC_MESSAGES/mergeant.mo
   /usr/share/locale/ru/LC_MESSAGES/mergeant.mo
+  /usr/share/locale/rw/LC_MESSAGES/mergeant.mo
   /usr/share/locale/sk/LC_MESSAGES/mergeant.mo
+  /usr/share/locale/sl/LC_MESSAGES/mergeant.mo
+  /usr/share/locale/sq/LC_MESSAGES/mergeant.mo
   /usr/share/locale/sr/LC_MESSAGES/mergeant.mo
   /usr/share/locale/sr@Latn/LC_MESSAGES/mergeant.mo
   /usr/share/locale/sv/LC_MESSAGES/mergeant.mo
@@ -371,11 +113,10 @@ Files included in the binary package:
   /usr/share/locale/uk/LC_MESSAGES/mergeant.mo
   /usr/share/locale/vi/LC_MESSAGES/mergeant.mo
   /usr/share/locale/zh_CN/LC_MESSAGES/mergeant.mo
-  /usr/share/mergeant/dtd/libmergeant.dtd
-  /usr/share/mergeant/ui/mergeant.xml
+  /usr/share/locale/zh_HK/LC_MESSAGES/mergeant.mo
+  /usr/share/locale/zh_TW/LC_MESSAGES/mergeant.mo
   /usr/share/mime-info/mergeant.keys
   /usr/share/mime-info/mergeant.mime
-  /usr/share/omf/mergeant/mergeant-C.omf
   /usr/share/pixmaps/document-icons/gnome-application-x-mergeant.png
   /usr/share/pixmaps/mergeant/mergeant.png
   /usr/share/pixmaps/mergeant/mergeant_connect.png
@@ -389,6 +130,8 @@ Files included in the binary package:
   /usr/share/pixmaps/mergeant/mergeant_rels_small.png
   /usr/share/pixmaps/mergeant/mergeant_sequences.png
   /usr/share/pixmaps/mergeant/mergeant_tables.png
+  /usr/share/pixmaps/mergeant/mg-extra-form.png
+  /usr/share/pixmaps/mergeant/mg-extra-grid.png
   /usr/share/pixmaps/mergeant/query-view-query_16x16.png
   /usr/share/pixmaps/mergeant/query-view-table_16x16.png
   /usr/share/pixmaps/mergeant/query-view-view_16x16.png
@@ -396,6 +139,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.66-1 -----
+Version bump for Gnome-DB 3.0 RC1.
 
 ----- version 0.52-1 -----
 Initial release for Cygwin.
