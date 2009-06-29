@@ -1,5 +1,5 @@
 category: Gnome Database
-requires: cygwin gdk-pixbuf2 glib2 gtk2-x11 libgda30 libgnomecanvas2 libgnomedb30 libgnomeui2 libintl8
+requires: gdk-pixbuf2 glib2 gtk2-x11 libgda30 libgnomecanvas2 libgnomedb30 libgnomeui2 libintl8
 sdesc: "GNOME Database administration program"
 ldesc: "Mergeant is a program which helps administer a DBMS database using 
 the gnome-db framework (see www.gnome-db.org for more information
